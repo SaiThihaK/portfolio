@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "@/components/global/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import PageWrapper from "@/components/global/page-wrapper";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -25,10 +26,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="container relative">
+          <PageWrapper>
             <Navbar />
             {children}
-          </div>
+          </PageWrapper>
         </ThemeProvider>
       </body>
     </html>
