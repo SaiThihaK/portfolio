@@ -4,8 +4,7 @@ import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback } from "react";
 import { ModeToggle } from "./mode-toggle";
 
 type Props = {};
@@ -37,13 +36,7 @@ const Navbar = (props: Props) => {
   }, [pathname]);
 
   return (
-    <div
-    // className="flex justify-between items-center  w-full container"
-    >
-      {/* <div>
-        <h2 className="text-3xl font-bold">Sai Thiha Kyaw</h2>
-        <span className="font-semibold">& FullStack Developer</span>
-      </div> */}
+    <div>
       <div className="fixed bottom-10 w-full left-0 flex justify-center z-[999]">
         <div className="flex  rounded-lg p-1 bg-[#4d4d4d] shadow-lg gap-x-[2px]">
           <div className="p-2 flex items-center bg-[#222222] rounded-lg text-white">
