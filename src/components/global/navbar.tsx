@@ -18,8 +18,8 @@ const NavbarLinks: {
     path: "/",
   },
   {
-    title: "Project",
-    path: "/project",
+    title: "About",
+    path: "/about",
   },
   {
     title: "Contact",
