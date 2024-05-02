@@ -3,18 +3,18 @@ import Marquee from "react-fast-marquee";
 const company: { company: string; duration: string; position: string }[] = [
   {
     company: "Viabell",
-    duration: "4Months",
+    duration: "4 Months",
     position: "Senior FullStack Developer",
   },
   {
     company: "Sprite",
-    duration: "8months",
+    duration: "8 months",
     position: "Senior Frontend Developer",
   },
   { company: "BMPS", duration: "8months", position: "React Developer" },
   {
     company: "Dynasity",
-    duration: "1yr & 8months",
+    duration: "1yr & 8 months",
     position: "React Developer",
   },
 ];
@@ -97,7 +97,7 @@ const ProjectPage = () => {
                 {exp.company}
               </div>
               <div className="flex flex-col">
-                <div className="font-bold uppercase text-start md:text-end">
+                <div className="font-bold  text-start md:text-end">
                   {exp.duration}
                 </div>
                 <div className="opacity-70 text-start md:text-end">
