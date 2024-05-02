@@ -27,7 +27,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <PageWrapper>
-            <Navbar />
+            <div className="fixed bottom-10 left-0 flex  w-full justify-center">
+              <Navbar />
+            </div>
             {children}
           </PageWrapper>
         </ThemeProvider>
