@@ -17,7 +17,7 @@ const ContactPage = () => {
         <div className="p-6 flex justify-between border-b-[0.5px] border-b-gray-600 flex-col md:flex-row items-center gap-4">
           <div className="w-[300px] md:w-[200px]">
             <h2 className="text-3xl font-extrabold font-mono">
-              Let's Create Something Greate Together
+              Let&apos; Create Something Greate Together
             </h2>
           </div>
           <div>

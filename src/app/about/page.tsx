@@ -42,7 +42,7 @@ const skill2: string[] = [
 const ProjectPage = () => {
   return (
     <main className="w-full flex flex-col gap-y-10">
-      <div className="w-full flex justify-center min-h-[70dvh]   flex-col gap-y-6">
+      <div className="w-full flex justify-center py-20   flex-col gap-y-6">
         <div className="text-8xl leading-20">
           Building the Interface of the Future
         </div>
@@ -54,7 +54,7 @@ const ProjectPage = () => {
         </div>
         <Link href="/contact">
           <div className="w-full border-2 border-black dark:border-white rounded-full flex justify-center items-center p-5 uppercase font-normal text-xl dark:hover:bg-slate-800 hover:bg-slate-200">
-            Let's Connect With Me
+            Let&apos; Connect With Me
           </div>
         </Link>
       </div>
