@@ -1,7 +1,7 @@
 "use client";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import Stamp from "./_component/stamp";
+
 
 const ContactPage = () => {
   return (

@@ -42,7 +42,7 @@ const Home: React.FC = () => {
           <div className="text-start ps-20 w-full">
             -committed to building robust
           </div>
-          <div className="text-start">and impactful web solutions.</div>
+          <div className="text-end">and impactful web solutions.</div>
         </div>
       </div>
     </main>

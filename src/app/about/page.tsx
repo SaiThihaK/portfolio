@@ -1,5 +1,5 @@
 import Marquee from "react-fast-marquee";
-const projects: string[] = ["Viabells", "Spirite", "BMPS"];
+const company: string[] = ["Viabells", "Spirite", "BMPS"];
 const skill1: string[] = [
   "reactjs",
   "nextjs",
@@ -57,7 +57,7 @@ const ProjectPage = () => {
         <h2 className="text-start text-4xl tracking-wider font-extrabold uppercase">
           Experience
         </h2>
-        {projects.map((project, index) => (
+        {company.map((project, index) => (
           <div
             className="flex flex-col  py-4 border-b-[7px] border-b-b;acl dark:border-b-white"
             key={index}
@@ -78,6 +78,9 @@ const ProjectPage = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div>
+        <h2 className="text-center">My Clients</h2>
       </div>
     </main>
   );
