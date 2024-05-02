@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "license":"CDDL-1.0",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,6 +16,7 @@
     "@types/react-curved-text": "^2.0.3",
     "class-variance-authority": "^0.7.0",
     "framer-motion": "^11.1.7",
+    "gsap": "^3.12.5",
     "lucide-react": "^0.372.0",
     "next": "14.2.2",
     "next-themes": "^0.3.0",

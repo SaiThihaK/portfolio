@@ -28,17 +28,22 @@ const Home: React.FC = () => {
           onMouseLeave={() => setIsHovered(false)}
           className="w-[1000px] p-10 text-6xl leading-[66px] cursor-default"
         >
-          A full-stack developer - wielding a tech stack that even A.I can't
-          outcode (yet) - crafting seamless applications only when the
-          compensation is as robust as their code.
+          A full-stack developer - wielding a tech stack that even A.I
+          can&apos;t outcode (yet) - crafting seamless applications only when
+          the compensation is as robust as their code.
         </p>
       </motion.div>
       <div className="w-full h-full flex items-center justify-center text-6xl leading-[66px] text-[#afa18f] cursor-default">
-        <p className="w-[1000px] p-10">
-          I'm a <span className="text-red-500">selectively skilled</span>{" "}
-          full-stack developer committed to building robust and impactful web
-          solutions.
-        </p>
+        <div className="w-full flex-col">
+          <div className="w-full text-start">
+            I&apos;m a <span className="text-red-500">selectively skilled</span>{" "}
+            full-stack developer
+          </div>
+          <div className="text-start ps-20 w-full">
+            -committed to building robust
+          </div>
+          <div className="text-end">and impactful web solutions.</div>
+        </div>
       </div>
     </main>
   );
