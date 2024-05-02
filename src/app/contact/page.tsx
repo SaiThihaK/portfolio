@@ -13,7 +13,7 @@ const ContactPage = () => {
   ];
   return (
     <div className="w-full h-screen flex justify-center items-center">
-      <div className="w-fit  border-gray-400 dark:border-white border-[1px] rounded-md shadow-xl dark:shadow-white shadow-black p-10">
+      <div className="w-fit  border-gray-400 dark:border-white border-[1px] rounded-md shadow-xl dark:shadow-white shadow-black px-2 py-2 md:p-10">
         <div className="p-6 flex justify-between border-b-[0.5px] border-b-gray-600 flex-col md:flex-row items-center gap-4">
           <div className="w-[300px] md:w-[200px]">
             <h2 className="text-3xl font-extrabold font-mono">

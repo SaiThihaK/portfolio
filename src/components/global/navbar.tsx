@@ -37,9 +37,9 @@ const Navbar = (props: Props) => {
 
   return (
     <div>
-      <div className="fixed bottom-10 w-full left-0 flex justify-center z-[999]">
-        <div className="flex  rounded-lg p-1 bg-[#4d4d4d] shadow-lg gap-x-[2px]">
-          <div className="p-2 flex items-center bg-[#222222] rounded-lg text-white">
+      <div className="w-full flex items-center z-[999]">
+        <div className="flex  rounded-lg p-1 bg-[#4d4d4d] shadow-lg md:gap-x-[2px]">
+          <div className="p-2  flex items-center bg-[#222222] rounded-lg text-white">
             {getPathName()}
             <Menu size="16" />
           </div>
@@ -55,7 +55,7 @@ const Navbar = (props: Props) => {
                     }
                   )}
                 >
-                  <span className="text-white">{navbar.title}</span>
+                  <span className="text-white ">{navbar.title}</span>
                 </div>
               </Link>
             ))}
