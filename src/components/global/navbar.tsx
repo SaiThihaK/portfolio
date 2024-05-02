@@ -37,7 +37,7 @@ const Navbar = (props: Props) => {
 
   return (
     <div>
-      <div className="w-full flex items-center z-[999]">
+      <div className="w-full flex items-center">
         <div className="flex  rounded-lg p-1 bg-[#4d4d4d] shadow-lg md:gap-x-[2px]">
           <div className="p-2  flex items-center bg-[#222222] rounded-lg text-white">
             {getPathName()}

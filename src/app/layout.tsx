@@ -27,7 +27,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <PageWrapper>
-            <div className="fixed bottom-10 left-0 flex  w-full justify-center">
+            <div className="fixed bottom-10 left-0 flex  w-full justify-center z-[9999999]">
               <Navbar />
             </div>
             {children}
