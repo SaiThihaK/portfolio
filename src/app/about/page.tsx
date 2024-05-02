@@ -1,5 +1,23 @@
+import Link from "next/link";
 import Marquee from "react-fast-marquee";
-const company: string[] = ["Viabells", "Spirite", "BMPS"];
+const company: { company: string; duration: string; position: string }[] = [
+  {
+    company: "Viabell",
+    duration: "4Months",
+    position: "Senior FullStack Developer",
+  },
+  {
+    company: "Sprite",
+    duration: "8months",
+    position: "Senior Frontend Developer",
+  },
+  { company: "BMPS", duration: "8months", position: "React Developer" },
+  {
+    company: "Dynasity",
+    duration: "1yr & 8months",
+    position: "React Developer",
+  },
+];
 const skill1: string[] = [
   "reactjs",
   "nextjs",
@@ -12,7 +30,8 @@ const skill1: string[] = [
 const skill2: string[] = [
   "tailwind",
   "shadcn",
-  "mui,antd",
+  "mui",
+  "antd",
   "framermotion",
   "gsap",
   "swr",
@@ -23,7 +42,7 @@ const skill2: string[] = [
 const ProjectPage = () => {
   return (
     <main className="w-full flex flex-col gap-y-10">
-      <div className="w-full flex justify-center h-[70dvh]   flex-col gap-y-6">
+      <div className="w-full flex justify-center min-h-[70dvh]   flex-col gap-y-6">
         <div className="text-8xl leading-20">
           Building the Interface of the Future
         </div>
@@ -33,9 +52,11 @@ const ProjectPage = () => {
           three years of hands-on experience, I specialize in turning complex
           problems into simple, beautiful, and intuitive designs.
         </div>
-        <div className="w-full border-2 border-black dark:border-white rounded-full flex justify-center items-center p-5 uppercase font-normal text-xl dark:hover:bg-slate-800 hover:bg-slate-200">
-          Let's Connect With Me
-        </div>
+        <Link href="/contact">
+          <div className="w-full border-2 border-black dark:border-white rounded-full flex justify-center items-center p-5 uppercase font-normal text-xl dark:hover:bg-slate-800 hover:bg-slate-200">
+            Let's Connect With Me
+          </div>
+        </Link>
       </div>
       <div className="w-full flex flex-col gap-y-6 h-[20dvh] justify-center">
         <Marquee speed={200}>
@@ -57,9 +78,9 @@ const ProjectPage = () => {
         <h2 className="text-start text-4xl tracking-wider font-extrabold uppercase">
           Experience
         </h2>
-        {company.map((project, index) => (
+        {company.map((exp, index) => (
           <div
-            className="flex flex-col  py-4 border-b-[7px] border-b-b;acl dark:border-b-white"
+            className="flex flex-col  py-4 border-b-[7px] border-b-black dark:border-b-white"
             key={index}
           >
             <div className="flex justify-between items-start flex-col md:flex-row w-full">
@@ -67,20 +88,19 @@ const ProjectPage = () => {
                 {(index + 1).toString().padStart(2, "0")}
               </div>
               <div className="text-8xl text-start md:center py-4 hover:translate-x-6 transition duration-500">
-                {project}
+                {exp.company}
               </div>
               <div className="flex flex-col">
-                <div className="font-bold uppercase">
-                  Senior FullStack Developer
+                <div className="font-bold uppercase text-start md:text-end">
+                  {exp.duration}
                 </div>
-                <div className="opacity-70">1yr and 3months</div>
+                <div className="opacity-70 text-start md:text-end">
+                  {exp.position}
+                </div>
               </div>
             </div>
           </div>
         ))}
-      </div>
-      <div>
-        <h2 className="text-center">My Clients</h2>
       </div>
     </main>
   );

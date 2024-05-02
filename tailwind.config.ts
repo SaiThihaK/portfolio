@@ -55,6 +55,7 @@ const config = {
       },
       fontFamily: {
         dancing: "Dancing Script",
+        hand: "Handjet",
       },
       borderRadius: {
         lg: "var(--radius)",
