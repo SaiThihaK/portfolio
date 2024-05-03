@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { ModeToggle } from "./mode-toggle";
 
 type Props = {};
@@ -34,9 +34,34 @@ const Navbar = (props: Props) => {
     if (navigateRoute) return navigateRoute.title;
     return "Home";
   }, [pathname]);
+  const [isVisible, setIsVisible] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (Math.abs(currentScrollY - lastScrollY) > 50) {
+        if (currentScrollY < lastScrollY) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+        setLastScrollY(currentScrollY);
+      }
+    };
+    if (window) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      if (window) {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [lastScrollY]);
 
   return (
-    <div>
+    <div className={`${isVisible ? "block" : "hidden"}`}>
       <div className="w-full flex items-center">
         <div className="flex  rounded-lg p-1 bg-[#4d4d4d] shadow-lg md:gap-x-[2px]">
           <div className="p-2  flex items-center bg-[#222222] rounded-lg text-white">
