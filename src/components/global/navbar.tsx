@@ -15,15 +15,15 @@ const NavbarLinks: {
 }[] = [
   {
     title: "Home",
-    path: "/",
+    path: "#home",
   },
   {
     title: "About",
-    path: "/about",
+    path: "#about",
   },
   {
     title: "Contact",
-    path: "/contact",
+    path: "#contact",
   },
 ];
 

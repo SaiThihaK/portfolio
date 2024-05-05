@@ -3,6 +3,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap, { Expo, Power0 } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef } from "react";
 import Marquee from "react-fast-marquee";
@@ -75,6 +76,7 @@ const AboutPageComponent = () => {
           trigger: "#char",
           scrub: 1,
           start: "top bottom",
+          end: "top center",
         },
       });
     },
@@ -96,6 +98,16 @@ const AboutPageComponent = () => {
             start: "top bottom",
           },
         });
+        experienceTl.from(".company-text-icon", {
+          width: 0,
+          height: 0,
+          delay: 1,
+          scrollTrigger: {
+            trigger: ".company-text-icon",
+            scrub: 1,
+            start: "top bottom",
+          },
+        });
       }
     },
     { scope: experienceRef }
@@ -104,7 +116,10 @@ const AboutPageComponent = () => {
   return (
     <main className="w-full flex flex-col py-5" ref={containerRef}>
       <div className="w-full flex justify-center py-20   flex-col gap-y-6">
-        <div className=" text-4xl md:text-8xl leading-20" ref={aboutTitleRef}>
+        <div
+          className=" text-5xl md:text-8xl  md:leading-20"
+          ref={aboutTitleRef}
+        >
           {returnTitleText()}
         </div>
         <div className="font-normal text-xs md:text-xl w-full">
@@ -113,7 +128,7 @@ const AboutPageComponent = () => {
           three years of hands-on experience, I specialize in turning complex
           problems into simple, beautiful, and intuitive designs.
         </div>
-        <Link href="/contact">
+        <Link href="mailto:saithihak2@gmail.com" target="_blank">
           <div className="w-full border-2 border-black dark:border-white rounded-full flex justify-center items-center p-2 md:p-5 uppercase font-normal text-md md:text-xl dark:hover:bg-slate-800 hover:bg-slate-200">
             Let&apos; Connect With Me
           </div>
@@ -154,11 +169,9 @@ const AboutPageComponent = () => {
               <div className="font-bold">
                 {(index + 1).toString().padStart(2, "0")}
               </div>
-              <div
-                className="text-6xl md:text-8xl text-start md:center py-4 hover:translate-x-6 transition duration-500 "
-                id={`comapny-text${index}`}
-              >
+              <div className="text-6xl md:text-8xl text-start md:center py-4 hover:translate-x-6 transition duration-500 flex items-center">
                 <p className="company-text">{exp.company}</p>
+                <ArrowUpRight className="company-text-icon w-20 h-20" />
               </div>
               <div className="flex flex-col">
                 <div className="font-bold  text-start md:text-end">

@@ -7,9 +7,15 @@ import React from "react";
 const page: NextPage = () => {
   return (
     <>
-      <HomePageComponent />
-      <AboutPageComponent />
-      <ContactPage />
+      <section id="home">
+        <HomePageComponent />
+      </section>
+      <section id="about">
+        <AboutPageComponent />
+      </section>
+      <section id="contact">
+        <ContactPage />
+      </section>
     </>
   );
 };
