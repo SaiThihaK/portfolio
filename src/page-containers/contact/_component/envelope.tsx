@@ -1,6 +1,4 @@
 "use client";
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
 
 const Envelope = () => {
   return (
@@ -87,7 +85,7 @@ const Envelope = () => {
         <div className="lid one"></div>
         <div className="lid two"></div>
         <div className="envelope"></div>
-        <div className="letter absolute !bg-white  text-black">
+        <div className="letter absolute !bg-[#d8d5d2]  text-black">
           <div className="p-3 flex flex-col justify-start gap-y-1">
             <p className="text-sm !text-start !font-semibold !font-mono tracking-wider">
               Sai Thiha Kyaw

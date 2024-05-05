@@ -1,16 +1,16 @@
 "use client";
+import Envelope from "@/page-containers/contact/_component/envelope";
 import Link from "next/link";
-import Envelope from "./_component/envelope";
 
+const contactLink: { name: string; link: string }[] = [
+  { name: "Github", link: "https://github.com/SaiThihaK" },
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/sai-thiha-kyaw-24b2a8225/",
+  },
+  { name: "Email", link: "saithihak2@gmail.com" },
+];
 const ContactPage = () => {
-  const contactLink: { name: string; link: string }[] = [
-    { name: "Github", link: "https://github.com/SaiThihaK" },
-    {
-      name: "Linkedin",
-      link: "https://www.linkedin.com/in/sai-thiha-kyaw-24b2a8225/",
-    },
-    { name: "Email", link: "saithihak2@gmail.com" },
-  ];
   return (
     <div className="w-full h-screen flex justify-center items-center">
       <div className="w-fit  border-gray-400 dark:border-white border-[1px] rounded-md shadow-xl dark:shadow-white shadow-black px-2 py-2 md:p-10">
