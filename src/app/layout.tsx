@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/global/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import PageWrapper from "@/components/global/page-wrapper";
+import MobileNavbar from "@/components/global/mobile-navbar/mobile-navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default function RootLayout({
         >
           <PageWrapper>
             <div className="fixed bottom-10 left-0 flex  w-full justify-center z-[9999999]">
-              <Navbar />
+              <MobileNavbar />
             </div>
             {children}
           </PageWrapper>

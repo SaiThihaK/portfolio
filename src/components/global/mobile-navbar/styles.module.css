@@ -1,0 +1,43 @@
+.hamburger path{
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+}
+.fullPageMenu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100dvh;
+    display: none;
+}
+.fullPageMenuInner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 100px 60px;
+}
+.menuBg{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+.nav ul{
+    list-style-type: none;
+}
+.navlink{
+    transition: transform 300ms ease-in-out 0s;
+}
+.navlink{
+    margin-top: 20px;
+}
+
+.navlink:hover{
+    transform: translateX(50px);
+}
