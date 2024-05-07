@@ -97,7 +97,7 @@ const Menubar = (props: Props) => {
         ref={fullPageRef}
       >
         <div
-          className="flex items-center h-full px-[100px] py-[60px]"
+          className="flex items-center h-full px-5 py-[60px]"
           ref={fullMenuRef}
         >
           <div className="h-full w-full absolute top-0 left-0 span-menu z-[8]">
@@ -105,7 +105,7 @@ const Menubar = (props: Props) => {
             <span className="h-1/3 w-full  dark:bg-white bg-black block"></span>
             <span className="h-1/3 w-full  dark:bg-white bg-black block"></span>
           </div>
-          <nav className="relative z-[10]">
+          <nav className="relative z-[10] w-full">
             <ul ref={mainMenuRef}>
               <li
                 className="link overflow-hidden mt-5 hover:translate-x-[50px]"
