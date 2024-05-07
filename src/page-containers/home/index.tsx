@@ -1,4 +1,5 @@
 "use client";
+import { ModeToggle } from "@/components/global/mode-toggle";
 import { useGSAP } from "@gsap/react";
 import gsap, { Power0 } from "gsap";
 // Home.tsx
@@ -57,16 +58,17 @@ const HomePageComponent: React.FC = () => {
       ref={containerRef}
     >
       <div
-        className="w-full flex justify-between top-0 items-center py-2"
+        className="w-full flex justify-between gap-x-4 top-0 items-center py-2"
         ref={talkRef}
       >
         <Link
           href={"#contact"}
-          className="flex justify-end w-full gap-x-2 hover:gap-x-4 transition-all duration-200 ease-linear items-center cursor-pointer"
+          className="flex justify-end  w-full gap-x-2 hover:gap-x-4 transition-all duration-200 ease-linear items-center cursor-pointer"
         >
           <ArrowRight className="w-4 h-4" />
           <span>Let&apos;s talk</span>
         </Link>
+        <ModeToggle />
       </div>
       <div className="w-full flex justify-center items-center">
         <h2 className="text-5xl md:text-7xl font-extrabold" ref={homeTitleRef}>
