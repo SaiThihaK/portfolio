@@ -56,7 +56,7 @@ const PageWrapper = ({ children }: Props) => {
     //     {children}
     //   </motion.div>
     // </AnimatePresence>
-    <div className="container relative">{children}</div>
+    <div className=" px-2 md:px-0 md:container relative">{children}</div>
   );
 };
 
